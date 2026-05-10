@@ -95,7 +95,7 @@ It:
 
 To deploy:
 
-1. Push this repository to GitHub.
+1. Push this repository to `https://github.com/RoryCode9/aikido-heyrieux-website`.
 2. Open repository **Settings → Pages**.
 3. Set **Source** to **GitHub Actions**.
 4. Push to `main` and wait for the `Hugo` workflow to complete.
@@ -114,4 +114,4 @@ Temporary images are stored locally and not hotlinked. See [`ATTRIBUTION.md`](AT
 - Replace placeholder club name, location, email, schedule, and instructor bios with real content.
 - Replace the placeholder contact form endpoint with a production form provider or backend.
 - Replace temporary Wikimedia images with final club-approved photography if available.
-- Update `baseURL` after the final GitHub Pages URL or custom domain is known.
+- GitHub Pages URL is expected to be `https://rorycode9.github.io/aikido-heyrieux-website/` unless a custom domain is configured.

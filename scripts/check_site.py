@@ -47,7 +47,19 @@ def local_path(public: Path, url: str) -> Path | None:
     rel = path.lstrip("/")
     candidate = public / rel
     if path.endswith("/"):
-        return candidate / "index.html"
+        candidate = candidate / "index.html"
+    if candidate.exists():
+        return candidate
+
+    # GitHub Pages project sites commonly render links under /repo-name/ while
+    # Hugo writes files at the public/ root. If the first path segment is a
+    # deployment base path, strip it for local build validation.
+    parts = Path(rel).parts
+    if len(parts) >= 1:
+        stripped = public.joinpath(*parts[1:]) if len(parts) > 1 else public
+        if path.endswith("/"):
+            stripped = stripped / "index.html"
+        return stripped
     return candidate
 
 
