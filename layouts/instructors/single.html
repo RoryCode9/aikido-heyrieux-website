@@ -1,0 +1,21 @@
+{{ define "main" }}
+<section class="page-hero compact">
+  <div class="container">
+    <p class="eyebrow">{{ site.Params.clubName }}</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+  </div>
+</section>
+<article class="container prose">
+  {{ .Content }}
+  <div class="instructor-grid" aria-label="Instructor profiles">
+    {{ range hugo.Data.instructors }}
+      <article class="instructor-card">
+        <h2>{{ .name }}</h2>
+        <p class="grade">{{ .grade }}</p>
+        <p>{{ .bio }}</p>
+      </article>
+    {{ end }}
+  </div>
+</article>
+{{ end }}

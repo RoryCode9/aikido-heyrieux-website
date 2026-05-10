@@ -1,0 +1,57 @@
+{{ define "main" }}
+{{ $hero := resources.Get "images/aikido-training.jpg" }}
+<section class="hero">
+  {{ with $hero }}
+    {{ $img := .Fill "1800x1100 smart" }}
+    <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="Aikido practitioners training together on a dojo mat" class="hero-image">
+  {{ end }}
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <p class="eyebrow">Traditional martial arts • Modern community</p>
+    <h1>{{ site.Params.clubName | default "Aikido Club" }}</h1>
+    <p class="lede">A welcoming place to study Aikido through movement, connection, discipline, and respect.</p>
+    <div class="button-row">
+      <a class="button primary" href="{{ relURL "classes/" }}">Join a Class</a>
+      <a class="button secondary" href="{{ relURL "contact/" }}">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<section class="container section-grid" aria-label="Club highlights">
+  <article class="feature-card">
+    <span class="feature-icon" aria-hidden="true">円</span>
+    <h2>Philosophy</h2>
+    <p>Aikido teaches harmony, awareness, and calm resolution through precise martial movement.</p>
+  </article>
+  <article class="feature-card">
+    <span class="feature-icon" aria-hidden="true">道</span>
+    <h2>Training</h2>
+    <p>Classes include footwork, ukemi, pins, throws, weapons basics, and partner practice.</p>
+  </article>
+  <article class="feature-card">
+    <span class="feature-icon" aria-hidden="true">初</span>
+    <h2>Beginners welcome</h2>
+    <p>No experience is required. We introduce fundamentals safely and step by step.</p>
+  </article>
+  <article class="feature-card">
+    <span class="feature-icon" aria-hidden="true">場</span>
+    <h2>Location</h2>
+    <p>Train at {{ site.Params.location }}. Replace this placeholder with the real dojo address.</p>
+  </article>
+</section>
+
+<section class="split-section">
+  <div class="container split-grid">
+    <div>
+      <p class="eyebrow">Practice with purpose</p>
+      <h2>Develop confidence without aggression</h2>
+      <p>Aikido practice builds posture, coordination, focus, and resilience. Each class is a chance to improve how you move, listen, and respond.</p>
+      <a class="text-link" href="{{ relURL "about/" }}">Learn about our club values</a>
+    </div>
+    {{ with resources.Get "images/aikido-keyhole.jpg" }}
+      {{ $img := .Fill "900x720 smart" }}
+      <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="Large group of Aikido students watching a demonstration" class="rounded-image">
+    {{ end }}
+  </div>
+</section>
+{{ end }}

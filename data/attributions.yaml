@@ -1,0 +1,14 @@
+- file: assets/images/aikido-training.jpg
+  title: "Aikido lesson in Turku Aikikai’s dojo 2016"
+  author: "Opkangas"
+  source: "https://commons.wikimedia.org/wiki/File:Aikido_lesson_in_Turku_Aikikai%E2%80%99s_dojo_2016.jpg"
+  license: "CC BY-SA 4.0"
+  license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
+  changes: "Downloaded and processed by Hugo for responsive derivatives."
+- file: assets/images/aikido-keyhole.jpg
+  title: "Aikido keyhole"
+  author: "Cesiumfrog"
+  source: "https://commons.wikimedia.org/wiki/File:Aikido_keyhole.jpg"
+  license: "CC BY-SA 3.0"
+  license_url: "https://creativecommons.org/licenses/by-sa/3.0/"
+  changes: "Downloaded and processed by Hugo for responsive derivatives."

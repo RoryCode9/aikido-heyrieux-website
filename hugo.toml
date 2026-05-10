@@ -1,0 +1,39 @@
+baseURL = "https://example.com/"
+locale = "en-US"
+title = "Aikido Club"
+timeZone = "UTC"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "A welcoming Aikido club website with classes, instructors, and contact information."
+  formEndpoint = "https://example.com/contact"
+  clubName = "Aikido Club"
+  location = "Your City Dojo"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+
+[menus]
+  [[menus.main]]
+    name = "Home"
+    pageRef = "/"
+    weight = 10
+  [[menus.main]]
+    name = "About"
+    pageRef = "/about/"
+    weight = 20
+  [[menus.main]]
+    name = "Classes"
+    pageRef = "/classes/"
+    weight = 30
+  [[menus.main]]
+    name = "Instructors"
+    pageRef = "/instructors/"
+    weight = 40
+  [[menus.main]]
+    name = "Contact"
+    pageRef = "/contact/"
+    weight = 50
