@@ -109,8 +109,10 @@ def main() -> int:
             errors.append("Contact form missing honeypot field")
         if 'required' not in contact_html or not re.search(r'type=[\"\']?email[\"\']?', contact_html):
             errors.append("Contact form missing basic client-side validation")
-        if 'https://example.com/contact' not in contact_html:
-            errors.append("Placeholder form endpoint not rendered as expected")
+        if 'https://formsubmit.co/rory.chat@tutamail.com' not in contact_html:
+            errors.append("Configured contact form endpoint not rendered as expected")
+        if 'rory.chat@tutamail.com' not in contact_html:
+            errors.append("Contact email address not rendered as expected")
 
     if errors:
         print("Site validation failed:", file=sys.stderr)

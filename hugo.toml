@@ -7,7 +7,7 @@ disableKinds = ["taxonomy", "term"]
 
 [params]
   description = "A welcoming Aikido club website with classes, instructors, and contact information."
-  formEndpoint = "https://example.com/contact"
+  formEndpoint = "https://formsubmit.co/rory.chat@tutamail.com"
   clubName = "Aikido Club"
   location = "Your City Dojo"
 

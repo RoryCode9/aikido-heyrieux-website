@@ -10,13 +10,15 @@
   <div class="prose">
     {{ .Content }}
     <p><strong>Dojo:</strong> {{ site.Params.location }}</p>
-    <p><strong>Email:</strong> hello@example.com</p>
+    <p><strong>Email:</strong> <a href="mailto:rory.chat@tutamail.com">rory.chat@tutamail.com</a></p>
   </div>
 
   <!-- Static site note: Hugo cannot process form submissions by itself.
-       Replace params.formEndpoint in hugo.toml with a real endpoint such as
-       Formspree, StaticForms, Netlify Forms, or a custom backend endpoint. -->
+       This form posts to FormSubmit, which forwards submissions to the club email. -->
   <form class="contact-form" action="{{ site.Params.formEndpoint }}" method="post">
+    <input type="hidden" name="_subject" value="New Aikido website contact message">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
     <div class="form-row">
       <label for="name">Name <span aria-hidden="true">*</span></label>
       <input id="name" name="name" type="text" autocomplete="name" required minlength="2">
@@ -38,7 +40,7 @@
       <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
     </div>
     <button class="button primary" type="submit">Send message</button>
-    <p class="form-note">This demo form uses a placeholder endpoint. Configure a real static-form provider before launch.</p>
+    <p class="form-note">Messages are sent to rory.chat@tutamail.com. The first submission may require email confirmation from FormSubmit.</p>
   </form>
 </section>
 {{ end }}

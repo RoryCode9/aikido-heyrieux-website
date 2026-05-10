@@ -52,7 +52,7 @@ Generated output goes to `public/`, which is intentionally ignored by Git.
 make check
 ```
 
-This performs a production Hugo build and runs `scripts/check_site.py` against `public/` to validate internal links, local assets, required contact form fields, honeypot field, and placeholder form endpoint visibility.
+This performs a production Hugo build and runs `scripts/check_site.py` against `public/` to validate internal links, local assets, required contact form fields, honeypot field, and configured FormSubmit endpoint visibility.
 
 Manual checks before launch:
 
@@ -67,19 +67,14 @@ Manual checks before launch:
 
 ## Contact form endpoint
 
-Hugo is static and cannot process form submissions by itself. The form currently posts to the placeholder endpoint configured in `hugo.toml`:
+Hugo is static and cannot process form submissions by itself. The contact form posts to FormSubmit, which forwards submissions to `rory.chat@tutamail.com`:
 
 ```toml
 [params]
-  formEndpoint = "https://example.com/contact"
+  formEndpoint = "https://formsubmit.co/rory.chat@tutamail.com"
 ```
 
-Replace this with a real endpoint before launch, for example:
-
-- Formspree
-- StaticForms
-- Netlify Forms
-- A custom backend endpoint
+Important: FormSubmit normally sends an activation email to the recipient on the first submission. Confirm that email from `rory.chat@tutamail.com` before relying on live contact messages.
 
 The form includes HTML5 validation and a honeypot anti-spam field.
 
