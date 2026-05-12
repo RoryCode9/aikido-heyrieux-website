@@ -70,6 +70,33 @@ main h1 {
   overflow-x: auto;
 }
 
+.home-hero-media {
+  margin: 0 0 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #111;
+}
+
+.home-hero-media__image,
+.home-feature-photo__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.home-content {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.home-feature-photo {
+  margin: 2rem 0 0;
+  border: 1px solid #c9d1d9;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #111;
+}
+
 footer {
   margin-top: 3rem;
 }
