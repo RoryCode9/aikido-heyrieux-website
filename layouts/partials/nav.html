@@ -1,0 +1,14 @@
+{{ range .Site.Menus.main.ByWeight }}
+  <a href="{{ .URL }}" {{ if or ($.IsMenuCurrent .Menu .) ($.HasMenuCurrent .Menu .) }}aria-current="page"{{ end }}>{{ .Name }}</a>
+{{ end }}
+
+{{ $translations := dict }}
+{{ range .AllTranslations }}
+  {{ $translations = merge $translations (dict .Language.Lang .) }}
+{{ end }}
+
+{{ range where hugo.Sites "Language.Lang" "!=" .Page.Lang }}
+  {{ with (index $translations .Language.Lang) }}
+    <a class="lang-switch" href="{{ .RelPermalink }}">{{ .Language.Label }}</a>
+  {{ end }}
+{{ end }}

@@ -1,32 +1,31 @@
 ---
-title: "Classes / Schedule"
-description: "Weekly Aikido classes, beginner sessions, regular training, weapons practice, and trial class details."
+title: "Cours"
+description: "Horaires, organisation des séances et informations pour commencer."
+menu:
+  main:
+    weight: 20
 ---
 
-## Weekly schedule
+## Horaires
 
-This schedule is placeholder content and should be updated with the club's real timetable.
+Les horaires ci-dessous sont à confirmer avec les créneaux réels du club.
 
-| Day | Time | Class | Notes |
+<div class="schedule-table">
+
+| Jour | Horaire | Séance | Notes |
 | --- | --- | --- | --- |
-| Monday | 18:30–19:30 | Beginner Class | Fundamentals, ukemi, etiquette |
-| Monday | 19:30–21:00 | Regular Class | Open to all levels |
-| Wednesday | 19:00–20:30 | Regular Class | Technique and partner practice |
-| Friday | 18:30–20:00 | Weapons Practice | Bokken and jo basics |
-| Saturday | 10:00–11:30 | All Levels | Mixed training and review |
+| Lundi | 18:30–19:30 | Débutants | Bases, déplacements, ukemi |
+| Lundi | 19:30–21:00 | Tous niveaux | Technique et pratique à deux |
+| Mercredi | 19:00–20:30 | Tous niveaux | Travail technique |
+| Vendredi | 18:30–20:00 | Armes | Bokken et jo |
+| Samedi | 10:00–11:30 | Révision | Pratique mixte |
 
-## Beginner class
+</div>
 
-The beginner class introduces safe falling, footwork, posture, distance, and basic partner exercises. It is the best place to start if you are new to Aikido or returning after a long break.
+## Débuter
 
-## Regular class
+Le cours débutant permet d’apprendre progressivement les chutes, les placements, la posture et l’étiquette du dojo. C’est le meilleur point d’entrée pour une première découverte.
 
-Regular classes explore empty-hand techniques, pins, throws, flowing movement, and applications adapted to different experience levels.
+## Séance d’essai
 
-## Weapons practice
-
-Weapons sessions use **bokken** and **jo** to study distance, timing, posture, and connection. These classes are accessible to beginners once basic safety rules are understood.
-
-## Trial class
-
-Your first trial class is welcome. Wear comfortable sports clothing with long sleeves and remove jewelry before stepping on the mat. Please arrive 10–15 minutes early so an instructor can introduce you to the dojo.
+Une séance d’essai est recommandée avant l’inscription. Prévoyez une tenue de sport souple et retirez bijoux et accessoires avant de monter sur le tatami.

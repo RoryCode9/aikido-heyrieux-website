@@ -1,25 +1,22 @@
 ---
-title: "About the Club"
-description: "Learn what Aikido is and discover the values of our friendly martial arts club."
+title: "Le club"
+description: "Découvrez l’esprit du club, la pratique de l’aïkido et les valeurs du dojo."
+menu:
+  main:
+    weight: 10
 ---
 
-## What is Aikido?
+## Qu’est-ce que l’aïkido ?
 
-Aikido is a Japanese martial art focused on blending with an attack, redirecting energy, and resolving conflict with control rather than force. Training includes movement, balance, posture, falls, pins, throws, and mindful partner practice.
+L’aïkido est un art martial japonais fondé sur le contrôle, le placement, la disponibilité et l’harmonie. La pratique travaille les déplacements, les chutes, les immobilisations, les projections et l’écoute du partenaire.
 
-Aikido is often described as the art of harmony. Its practice helps develop body awareness, calmness under pressure, and respect for training partners.
+## Les valeurs du dojo
 
-## Our values
+- **Respect** du partenaire, de l’enseignant et du lieu de pratique
+- **Rigueur** dans le travail technique et la sécurité
+- **Progression** à son rythme, sans esprit de compétition
+- **Convivialité** pour accueillir les nouvelles personnes dans de bonnes conditions
 
-Our club is built around four simple values:
+## Pour qui ?
 
-- **Respect** — for instructors, partners, the dojo, and yourself.
-- **Discipline** — steady practice, attention to detail, and safe habits.
-- **Harmony** — learning to move with others rather than against them.
-- **Progression** — improving step by step, at your own pace.
-
-## Beginner-friendly atmosphere
-
-You do not need previous martial arts experience to start. Beginners are introduced gradually to etiquette, warm-ups, footwork, falling safely, and core techniques. Senior students help create a calm and supportive environment where questions are welcome.
-
-Come as you are, train consistently, and enjoy the process.
+Le club accueille les adultes et les pratiquants souhaitant découvrir l’aïkido dans un cadre sérieux et bienveillant. Aucun prérequis n’est nécessaire pour commencer.

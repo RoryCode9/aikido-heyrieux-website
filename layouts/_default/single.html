@@ -1,12 +1,6 @@
 {{ define "main" }}
-<section class="page-hero compact">
-  <div class="container">
-    <p class="eyebrow">{{ site.Params.clubName }}</p>
-    <h1>{{ .Title }}</h1>
-    {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
-  </div>
-</section>
-<article class="container prose">
+<h1>{{ .Title }}</h1>
+<content>
   {{ .Content }}
-</article>
+</content>
 {{ end }}

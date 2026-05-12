@@ -1,39 +1,46 @@
 baseURL = "https://rorycode9.github.io/aikido-heyrieux-website/"
-locale = "en-US"
-title = "Aikido Club"
-timeZone = "UTC"
+theme = "hugo-bearcub"
+title = "Aïkido Club Heyrieux"
+defaultContentLanguage = "fr"
+defaultContentLanguageInSubdir = false
+timeZone = "Europe/Paris"
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "term"]
-
-[params]
-  description = "A welcoming Aikido club website with classes, instructors, and contact information."
-  formEndpoint = "https://formsubmit.co/rory.chat@tutamail.com"
-  clubName = "Aikido Club"
-  location = "Your City Dojo"
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = false
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
 
-[menus]
-  [[menus.main]]
-    name = "Home"
-    pageRef = "/"
-    weight = 10
-  [[menus.main]]
-    name = "About"
-    pageRef = "/about/"
-    weight = 20
-  [[menus.main]]
-    name = "Classes"
-    pageRef = "/classes/"
-    weight = 30
-  [[menus.main]]
-    name = "Instructors"
-    pageRef = "/instructors/"
-    weight = 40
-  [[menus.main]]
-    name = "Contact"
-    pageRef = "/contact/"
-    weight = 50
+[params]
+  description = "Club d’aïkido convivial à Heyrieux : cours, horaires, enseignants et informations pour débuter."
+  title = "Aïkido Club Heyrieux"
+  themeStyle = "original"
+  hideUntranslated = true
+  generateSocialCard = false
+  [params.author]
+    name = "Aïkido Club Heyrieux"
+    email = "contact@aikido-heyrieux.fr"
+
+[languages]
+  [languages.fr]
+    title = "Aïkido Club Heyrieux"
+    label = "Français"
+    locale = "fr-FR"
+    contentDir = "content"
+    weight = 1
+    [languages.fr.params]
+      description = "Club d’aïkido convivial à Heyrieux : cours, horaires, enseignants et informations pour débuter."
+      madeWith = "Propulsé par [Hugo](https://gohugo.io/) et le thème [Bear Cub](https://github.com/clente/hugo-bearcub)."
+
+  [languages.en]
+    title = "Heyrieux Aikido Club"
+    label = "English"
+    locale = "en-US"
+    contentDir = "content.en"
+    weight = 2
+    [languages.en.params]
+      description = "Friendly Aikido club in Heyrieux with classes, instructors, and beginner information."
+      madeWith = "Powered by [Hugo](https://gohugo.io/) and the [Bear Cub](https://github.com/clente/hugo-bearcub) theme."
