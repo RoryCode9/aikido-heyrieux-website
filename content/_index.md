@@ -9,9 +9,9 @@ description: "Pratiquez un aïkido accessible, rigoureux et convivial à Heyrieu
 
 L’Aïkido Club Heyrieux propose une pratique ouverte à toutes et tous, débutants comme pratiquants confirmés. Le site repose désormais sur une stack Hugo légère : contenu en Markdown, thème Hugo minimal, déploiement GitHub Actions vers GitHub Pages.
 
-<div class="cta-links">
+<div class="hero-actions">
 
-[Voir les cours]({{< relref "classes.md" >}})  
+[Voir les cours]({{< relref "classes.md" >}})
 [Contacter le club]({{< relref "contact.md" >}})
 
 </div>

@@ -9,9 +9,9 @@ description: "Practice accessible, respectful Aikido in Heyrieux."
 
 Heyrieux Aikido Club welcomes beginners and experienced practitioners alike. The site now follows a lightweight Hugo stack: Markdown content, a minimal Hugo theme, and GitHub Actions deployment to GitHub Pages.
 
-<div class="cta-links">
+<div class="hero-actions">
 
-[View classes]({{< relref "classes.md" >}})  
+[View classes]({{< relref "classes.md" >}})
 [Contact the club]({{< relref "contact.md" >}})
 
 </div>
